@@ -3,6 +3,8 @@ import { createGlobalStyle } from "styled-components";
 import TodoHead from "./components/TodoHead";
 import TodoTemplate from "./components/TodoTemplate";
 // global 적용 css
+import Count from "./components/Test/Count";
+
 const GlobalStyle = createGlobalStyle`
   body {
       background: #e9ecef;
@@ -12,9 +14,10 @@ const GlobalStyle = createGlobalStyle`
 export default function App() {
   return (
     <>
-      <GlobalStyle />
+      {/* <GlobalStyle />
 
-      <TodoTemplate>안녕하세요!</TodoTemplate>
+      <TodoTemplate>안녕하세요!</TodoTemplate> */}
+      <Count />
     </>
   );
 }
